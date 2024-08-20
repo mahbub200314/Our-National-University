@@ -1,0 +1,837 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+      font-family: "Poppins", "Open Sans", sans-serif;
+
+}
+.notice{
+
+    height: 50px;
+    width: 80%;
+    margin:0px 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.notice p{
+    background-color: rgb(13, 202, 240);
+    padding:2px ;
+    font-size: 15;
+    font-weight: lighter;
+    
+
+}
+
+.notice marquee{
+color: rgb(9, 199, 237);
+font-weight: bold;
+
+}
+
+
+
+/************nav bar start ***************/
+
+
+.navbar{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding:5px 7%;
+    align-items: center;
+    position: relative;
+    
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    position: sticky;
+    top:0px;
+}
+
+.navbar .logo{
+    font-size: 25px;
+      color: rgb(129, 41, 144);
+}
+
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    color:black;
+}
+.navbar ul li{
+    margin:0px 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(8, 39, 68);
+}
+
+.navbar .icon{
+    display: none;
+}
+
+.navbar ul li a i{
+    font-size: 10px;
+}
+.navbar ul li .dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    display: none;
+    z-index:+ 999;
+    
+}
+
+.dropdown li{
+    padding:10px;
+    background-color: rgb(13, 202, 240);
+    width: auto;
+}
+
+
+.navbar ul li:hover .dropdown{
+    display: block;
+}
+
+.nu-home a{
+    background-color: rgb(130, 36, 145);
+    padding: 10px 15px;;
+    border-radius:30px ;
+    
+}
+
+.navbar .nu-home a{
+    color:#fff;
+}
+.navbar .nu-home a:hover{
+    background-color: rgb(250, 166, 25);
+}
+
+
+           /************* navbar responsive**********/
+@media(max-width:1056px){
+
+   
+    .navbar ul{
+        position: absolute;
+        top:80px;
+        left:0px;
+        right:0px;
+        flex-direction: column;
+        text-align: center;
+        
+        z-index: 999;
+        background-color: gray;
+        transition: 0.5s;
+        overflow:hidden;
+
+    }
+
+    .navbar ul li .dropdown{
+        top:40px;
+    }
+
+
+    .navbar ul li{
+        padding:10px 0px ;
+        border: 2px solid gainsboro;
+        cursor: pointer;
+        margin: 0px;
+    }
+
+     .navbar .icon{
+        display: block;
+        font-size: 25px;
+        border: 2px solid gainsboro;
+        padding:2px 10px;
+    }
+
+    .navbar .nu-home a{
+        background-color:transparent;
+    }
+
+    .navbar .nu-home a:hover{
+        background-color: transparent;
+    }
+} 
+      
+
+
+
+
+
+
+
+
+
+
+/************* hero section start**********/
+
+.herosection{
+    min-height: 67vh;
+    background: url(hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top:5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-blend-mode: darken;
+    background-color: rgb(0,0,0,0.4);
+    
+    
+    
+}
+
+.nu-logo img{
+    width: 130px;
+    margin:10px;
+}
+
+.herosection h1{
+    color: rgb(250, 166, 25);
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.herosection button{
+    width: fit-content;
+    background-color:rgb(250, 166, 25);
+    border:1px solid transparent;
+    padding:15px 30px;
+    margin: 15px;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 17px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.herosection button:hover{
+   background-color:rgb(13, 202, 240) ;
+}
+
+
+
+
+/*********** colleges start**********/
+
+
+.colleges{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background-color:rgb(241, 247, 253);
+    align-items: center;
+    justify-content: center;
+}
+
+.college{
+    width:300px;
+    height: 150px;
+    background-color:rgb(255, 255, 255);
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.college h2{
+    margin:5px;
+    font-size: 2.7rem;
+    color:rgb(8, 39, 68);
+}
+.college p{
+    margin:5px;
+    color:rgb(8, 39, 68)
+}
+
+.college i{
+    position: absolute;
+    top:-25px;
+    font-size: 20px;
+    background-color: rgb(130, 36, 145);
+    color:white;
+    padding:15px;
+    border-radius:50%;
+}
+
+
+
+/************colleges responsive**********/
+@media(max-width:732px){
+    .colleges{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .college{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+/************ form fill up**********/
+
+.formfillup{
+    min-height: 50vh;
+   text-align: center;
+   margin-bottom:10px;
+   padding-top: 10px;
+   
+   
+
+}
+
+ .formfillup p{
+    width: 150px;
+    height: 1px;
+    background-color:rgb(190, 195, 200);
+    
+    display: inline-block;
+
+    align-self: center;
+    align-items: center;
+    position: relative;
+   
+   justify-content: center;
+}
+
+.formfillup h2{
+    color:rgb(8, 39, 68);
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.formfillup p span{
+    position: absolute;
+    background-color: rgb(25, 119, 204);
+    width:50px;
+    height: 3px;
+    top:-0.9px;
+    right:50px
+
+}
+
+.formfillup .classes{
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.formfillup .classes .degree{
+    width: 300px;
+    min-height: 200px;
+    
+    margin: 10px;
+    border: 1px solid rgb(219, 229, 237) ;
+    box-shadow: rgb(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.formfillup .degree i{
+margin: 10px;
+font-size: 25px;
+background-color: rgb(129, 41, 144);
+padding:20px 16px;
+color:white;
+border-radius: 5px;
+}
+
+.formfillup .degree h2{
+    margin:15px;
+}
+
+.formfillup .degree p2{
+    margin:5px;
+
+    margin-bottom:35px;
+    font-size: 15px;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+.formfillup .degree i{
+    box-shadow: rgb(181, 226, 235) -8px -9px  ;
+    
+}
+
+
+.formfillup .degree:hover{
+     background-color: rgb(250, 166, 25);
+     cursor: pointer;
+}
+
+
+.formfillup .classes .degree:hover i{
+    background-color: #fff;
+    color:rgb(130, 36, 145);
+    box-shadow: rgb(13, 202, 240) -8px -9px ;
+}
+
+
+
+
+
+/************* somenotice start*************/
+
+
+
+.somenotice{
+    min-height: 15vh;
+    background-color:rgb(61, 77, 106) ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 7%
+}
+
+.somenotice p{
+    border:2px solid #fff;
+    width: fit-content;
+    padding:15px 25px;
+    color:#fff;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+.somenotice p:hover{
+    background-color:rgb(13, 202, 240);
+    border: 1px solid transparent;
+    transition: 0.5  ease-out;
+    cursor: pointer;
+}
+
+
+@media (max-width:350px){
+    .somenotice{
+       justify-content: center;
+    } 
+}
+
+
+
+
+/************* examinations *********/
+.examinations{
+    min-height: 40vh;
+    text-align: center;
+    margin-top: 35px;
+
+    
+}
+
+
+
+ .examinations p{
+    width: 150px;
+    height: 1px;
+    background-color:rgb(190, 195, 200);
+    
+    display: inline-block;
+
+    align-self: center;
+    align-items: center;
+    position: relative;
+   
+   justify-content: center;
+}
+
+.examinations h2{
+    color:rgb(8, 39, 68);
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.examinations p span{
+    position: absolute;
+    background-color: rgb(25, 119, 204);
+    width:50px;
+    height: 3px;
+    top:-1px;
+    right:50px
+
+}
+
+
+.main{
+    margin:25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.main .first{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    
+
+}
+
+
+
+
+.main .first pre{
+    margin-bottom:38px;
+    margin-left:30%;
+    font-weight: bold;
+}
+
+
+ .active{
+    color:rgb(24, 130, 152);
+
+}
+
+
+.main .second{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    position: relative;
+}
+
+.main .second h2{
+    margin-bottom:20px;
+}
+
+.main .second a{
+    text-decoration: none;
+}
+.main .second pre{
+    margin-bottom:10px;
+    opacity: 0.5;
+}
+
+
+
+.main .second hr{
+    margin:10px 0px;
+    opacity: 0.3;
+    width:70%;
+
+    margin-bottom:20px;
+}
+
+.main .second .underdiv span{
+    margin-right: 10%;
+
+
+}
+
+.main .second .underdiv span2{
+    margin-right: 20%;
+    font-weight: bold;
+}
+
+
+.main .second .underdiv span3{
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.second::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(61, 77, 106);
+    width:1px;
+    height: 130px;
+    left:-20px;
+    opacity: 0.3;
+}
+
+.second::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(13, 202, 240);
+    width:3px;
+    height: 50px;
+    left:-20.5px;
+}
+
+
+
+
+@media (max-width:865px){
+    .examinations .main{
+        flex-direction: column;
+    }
+
+    .main .first{
+        width: 100%;
+        text-align: center;
+        margin-left:0px;
+        padding:0px;
+    }
+
+    .main .first pre{
+        margin:35px 0px;
+    }
+
+    .main .second{
+        width: 100%;
+        padding: 5px 5%;
+    }
+}
+/************* examinations end *********/
+
+
+/*************** services ************/
+.services{
+    min-height: 60vh;
+      text-align:center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+.services p{
+    width: 150px;
+    height: 1px;
+    background-color:rgb(190, 195, 200);
+    
+    display: inline-block;
+
+    align-self: center;
+    align-items: center;
+    position: relative;
+   
+   justify-content: center;
+}
+
+.services h2{
+    color:rgb(8, 39, 68);
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.services p span{
+    position: absolute;
+    background-color: rgb(25, 119, 204);
+    width:50px;
+    height: 3px;
+    top:-1px;
+    right:50px
+
+}
+
+.services .service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.services .service button{
+    width:300px;
+    height: 70px;
+    display: flex;
+    margin:15px;
+    font-size: 15px;
+    
+    background-color: transparent;
+    border: 0.3px solid rgb(227, 224, 224);
+    text-align: left;
+    align-items: center;
+    
+}
+
+.service button:hover{
+    border:1px solid greenyellow;
+    color:greenyellow;
+    transition: 0.2s ease-in;
+}
+
+.service button i{
+    margin:0px 15px;
+
+    font-size: 25px;
+    align-self: center;
+}
+
+/*************** services end ************/
+
+
+/**************** contact start*************/
+
+
+
+.contact{
+    min-height: 50vh;
+    text-align: center;
+}
+
+
+.contact p{
+    width: 150px;
+    height: 1px;
+    background-color:rgb(190, 195, 200);
+    
+    display: inline-block;
+
+    align-self: center;
+    align-items: center;
+    position: relative;
+   
+   justify-content: center;
+}
+
+.contact h2{
+    color:rgb(8, 39, 68);
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.contact p span{
+    position: absolute;
+    background-color: rgb(25, 119, 204);
+    width:50px;
+    height: 3px;
+    top:-1px;
+    right:50px
+
+}
+
+.contacts{
+    display: flex;
+    padding:5%;
+}
+
+.contacts .first{
+    margin-right: 10%;
+}
+
+.contacts div{
+    
+    text-align: left;
+    align-items: start;
+}
+
+.contacts div .div1{
+    display: flex;
+    margin:20px 2%;
+    align-items: top;
+    
+    
+
+}
+.contacts div ul{
+    list-style: none;
+}
+
+.contacts div .div1 i{
+    color: rgb(47, 169, 230);
+    background-color: rgb(217, 238, 248);
+    border-radius: 50px;
+    height: fit-content;
+    font-size: 20px;
+    padding:15px;
+    margin:10px;
+}
+
+.contacts ul h3{
+    color:rgb(14, 85, 120);
+    margin-bottom:10px;
+    margin-top:15px ;
+    font-size: 25px;
+}
+
+.contacts div .div1 ul li{
+    margin-bottom:10px;
+    color:rgb(111, 188, 203)
+}
+
+
+.contacts div .div1:hover i{
+    color:rgb(250, 166, 25);
+    background-color: rgb(25, 119, 204);
+    transition: 0.5s ease-in;
+}
+
+.contacts .second iframe{
+    border:1px solid rgb(13, 202, 240);
+    
+}
+@media (max-width:1175px){
+
+    .contacts{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:925px){
+    iframe{
+        width: 300px;
+        width: 300px;
+    }
+
+    .contacts .second{
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+.end{
+    height: 70px;
+    background-color: rgb(203, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    padding:5%;
+}
+
+.end i{
+    margin:0px 10px;
+    font-size: 35px;
+    color:rgb(130, 36, 145);
+    cursor: pointer
+    ;
+
+}
+
+.end i:hover{
+    color:rgb(13, 202, 240)
+}
